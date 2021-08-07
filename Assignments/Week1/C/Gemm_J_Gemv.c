@@ -10,6 +10,7 @@ void MyGemm( int m, int n, int k,
 	     double *C, int ldC )
 {
   for ( int j=0; j<n; j++ )
-    MyGemv(  ,  ,  ,  ,  ,  ,  ,   );
+    MyGemv(  m,  k,  A,  ldA,  &beta(0,j),  1,  &gamma(0,j),   1);
 }
   
+	
